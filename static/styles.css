@@ -1,0 +1,49 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+#main {
+	border-top: 6px solid #0074D9;
+}
+
+/* index.html */
+h1.title {
+	margin: 0;
+	padding: 30px 20px;
+}
+
+form {
+	margin: 0;
+	padding: 0 20px;
+}
+
+div.input-group {
+	padding: 5px 0;
+}
+
+div.input-group input {
+	padding: 8px 16px;
+	font-size: 18px;
+	border: 2px solid #ddd;
+	border-radius: 3px;
+}
+
+div.input-group input:hover,
+div.input-group input:focus {
+	outline: none;
+	border-color: #bbb;
+}
+
+button.track {
+	margin: 20px 0 0;
+	padding: 8px 16px;
+	font-size: 18px;
+	min-width: 100px;
+	border: none;
+	background-color: #233639;
+	border-radius: 3px;
+	color: #eee;
+	cursor: pointer;
+}

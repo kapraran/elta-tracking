@@ -1,0 +1,24 @@
+{% extends "./layout.html" %}
+
+{% block main %}
+    
+    <h1 class="title">Elta Mail Tracking</h1>
+    
+    <form class="tracking" action="/" method="POST">
+    	<div class="input-group">
+    		<input class="tracking-code" name="trackingCode" type="text" placeholder="your tracking code">
+    	</div>
+    	
+    	<div class="input-group">
+    		<input class="email" name="email" type="text" placeholder="your email">
+    	</div>
+    	
+    	<div class="input-group">
+    		<input class="label" name="label" type="text" placeholder="choose a label (optional)">
+    	</div>
+
+    	<button class="track">Track</button>
+	</form>
+	
+	<script src="/static/index.js"></script>
+{% endblock %}

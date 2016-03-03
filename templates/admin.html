@@ -1,0 +1,13 @@
+{% extends "./layout.html" %}
+
+{% block main %}
+    
+    <table>
+    {% for key, value in trackingCodes %}
+        <tr>
+			<td>{{ key }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

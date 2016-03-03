@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ΕΛΤΑ tracking</title>
+</head>
+
+<body style="-webkit-font-smoothing:antialiased;width:100%!important;height: 100%;margin:0;padding:0;background-color:#ffffff">
+
+<table style="width:100%;padding:20px;border-collapse:collapse">
+	<tr>
+		<td style="background-color:#ffffff">
+
+			<!-- content -->
+			<div style="display:block">
+			<table style="width:100%;border-collapse:collapse">
+				<tr>
+					<td style="padding:20px 0 0;">
+						<img style="display:inline-block;" src="http://i.imgur.com/ewwxR4z.jpg" alt="ELTA"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p style="color:#343434;font-size:18px;display:inline-block;padding:20px 0">
+						Η κατάσταση της παραγγελία σας 
+						{% if label != null %}
+							με όνομα <b>{{ label }}</b>
+						{% else %}
+							με κωδικό <b>{{ trackingCode }}</b>
+						{% endif %}
+						έχει ενημερωθεί.
+						</p>
+						<table style="border-collapse:collapse;width:100%">
+							<tr style="background-color:#005FC9;color:#fff">
+								<td style="padding:10px">Κατάσταση</td>
+								<td style="padding:10px">Ημερομηνία</td>
+								<td style="padding:10px">Ώρα</td>
+								<td style="padding:10px">Περιοχή</td>
+							</tr>
+							{% for status in statuses %}
+							<tr style="border:1px solid #dddddd;border-top:none;">
+								<td style="padding:8px 10px">{{ status.status }}</td>
+								<td style="padding:8px 10px;width:14%">{{ status.date }}</td>
+								<td style="padding:8px 10px;width:14%">{{ status.time }}</td>
+								<td style="padding:8px 10px;width:14%">{{ status.place }}</td>
+							</tr>
+							{% endfor %}
+						</table>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<!-- /content -->
+			
+		</td>
+	</tr>
+</table>
+
+<h6>Αυτή η υπηρεσία δεν έχει καμία σχέση με την ΕΛΤΑ Α.Ε.</h6>
+
+</body>
+</html>

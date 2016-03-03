@@ -1,0 +1,13 @@
+{
+  "name": "elta",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "mailgun-js": "^0.7.7",
+    "q": "^1.4.1",
+    "request": "^2.69.0",
+    "swig": "^1.4.2",
+    "underscore": "^1.8.3"
+  }
+}
